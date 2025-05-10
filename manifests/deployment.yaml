@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pokemonsearch
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: pokemonsearch
+  template:
+    metadata:
+      labels:
+        app: pokemonsearch
+    spec:
+      containers:
+      - name: buscador
+        image: ldg4mez/pokemonsearch:latest  # Cambia esto por tu imagen de DockerHub o ACR
+        ports:
+        - containerPort: 80
