@@ -13,7 +13,7 @@ spec:
         app: pokemonsearch
     spec:
       containers:
-      - name: buscador
+      - name: pokemonsearch
         image: ldg4mez/pokemonsearch:latest  # Cambia esto por tu imagen de DockerHub o ACR
         ports:
         - containerPort: 80
