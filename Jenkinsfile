@@ -71,7 +71,7 @@ pipeline {
                     kubectl apply -f manifests/deployment.yaml
                     kubectl apply -f manifests/service.yaml
 
-                    kubectl rollout restart deployment parte2redes-deployment -n default
+                    kubectl rollout restart deployment pokemonsearch -n default
                 '''
             }
         }
